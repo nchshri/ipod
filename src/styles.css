@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    font-family: sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    -webkit-app-region: drag;
+}
+
+.ipod {
+    background-image: linear-gradient(to bottom right, #530a54, #fec9ff);
+    background-repeat: no repeat;
+    height: 300px;
+    width: 230px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-block: 12px;
+}
+
+.screen {
+    background-color: black;
+    border-radius: 5px;
+    width: 193px;
+    display: flex;
+    padding: 3px;
+    position: relative;
+}
+
+.albumCover {
+    height: 27vh;
+    float: right;
+    margin-left: 58px;
+}
+
+.info {
+    background-image: linear-gradient(to bottom right, #ffffff, #c4c4c4);
+    background-repeat: no repeat;
+    width: 40%;
+    border-radius: 4px 0px 0px 4px;
+    position: absolute;
+    height: 27vh;
+    line-height: 2px;
+}
+
+.current {
+    background-color: #499ceb;
+    border-radius: 2px;
+    margin-inline: 3px;
+}
+
+.song {
+    padding-block: 2px;
+    color: white;
+    font-size: 11px;
+    font-weight: 700;
+    margin-left: 4px;
+    line-height: 13px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    flex-wrap: wrap;
+}
+
+.artist {
+    color: #5e5e5e;
+    font-size: 11px;
+    font-weight: 600;
+    margin-inline: 4px;
+    line-height: 14px;
+    word-wrap: break-word;
+}
+
+.nowPlayingTime {
+    color: #5e5e5e;
+    font-size: 11px;
+    font-weight: 500;
+    margin-inline: 4px;
+    line-height: 14px;
+    word-wrap: break-word;
+}
+
+.control {
+    width: 140px;
+}
