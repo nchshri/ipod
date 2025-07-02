@@ -48,21 +48,17 @@ export const getNowPlaying = async () => {
     const albumImageUrl = song.item.album.images[0].url;
     const artist = song.item.artists.map((artist) => artist.name).join(', ');
     const isPlaying = song.is_playing;
-    const songUrl = song.item.external_urls.spotify;
     const title = song.item.name;
     const timePlayed = song.progress_ms;
     const timeTotal = song.item.duration_ms;
-    const artistUrl = song.item.album.artists[0].external_urls.spotify;
 
     return {
       albumImageUrl,
       artist,
       isPlaying,
-      songUrl,
       title,
       timePlayed,
       timeTotal,
-      artistUrl
     };
   } catch (error) {
     console.error('Error fetching currently playing song: ', error);
@@ -85,15 +81,12 @@ const NowPlaying = () => {
 
   }, []);
 
-  let playerState = ''
   let secondsPlayed = 0, minutesPlayed = 0, secondsTotal = 0, minutesTotal = 0;
   let albumImageUrl = '/albumCover.png'
   let title = ''
   let artist = ''
 
   if (nowPlaying != null && nowPlaying.title) {
-    nowPlaying.isPlaying ? playerState = 'PLAY' : playerState = 'PAUSE'
-
     secondsPlayed = Math.floor(nowPlaying.timePlayed/1000);
     minutesPlayed = Math.floor(secondsPlayed/60);
     secondsPlayed = secondsPlayed % 60;
@@ -106,7 +99,6 @@ const NowPlaying = () => {
     title = nowPlaying.title
     artist = nowPlaying.artist
   } else if (nowPlaying === 'Currently Not Playing') {
-    playerState = 'OFFLINE' 
     title = 'user is'
     artist = 'currently offline'
   } else {
