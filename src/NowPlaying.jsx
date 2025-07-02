@@ -8,7 +8,7 @@ const TOKEN_ENDPOINT = 'https://accounts.spotify.com/api/token';
 
 const client_id = '<client_id>';
 const client_secret = '<client_secret>';
-const refresh_token = "AQBmlYdBd4-yqzkq_31euWFXsAzwO8g_2H_SIkcclaUlaMTlScbeV6L6mAFPhvvlt5lB_d-7WPE0b3QQ-wo1T9gy7IKpxo1rGZ-Eg70ZHXpTTV5DtfE-7H0uUg6iGMsgo7Y";
+const refresh_token = '<refresh_token>';
 
 export const getAccessToken = async (client_id, client_secret, refresh_token) => {
     const basic = Buffer.from(`${client_id}:${client_secret}`).toString('base64');

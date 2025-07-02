@@ -1,5 +1,5 @@
 {
-  "name": "spotify-react-widget",
+  "name": "ipod",
   "version": "0.1.0",
   "private": true,
   "main": "electron/electron.js",
