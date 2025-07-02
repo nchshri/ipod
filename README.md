@@ -69,9 +69,13 @@ You’ll get a JSON response like:</br>
 You will only need the "refresh_token".
 
 ### Add To Your Code
-In your NowPlaying.jsx, insert:
+In your NowPlaying.jsx, insert:</br>
 `client_id, client_secret, refresh_token`</br>
-Then run your app locally and you should be good to go!
+</br>
+To run your widget locally, run the following command:</br>
+`npm run electron:dev`</br>
+</br>
+**You now have a functional desktop ipod widget!** </br>
 
 
 [^1]: https://medium.com/@alagappan.dev/create-a-now-playing-widget-using-the-spotify-web-api-in-react-a6cb564ed923
